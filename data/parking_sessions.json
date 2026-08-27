@@ -1,1 +1,12 @@
-[]
+[
+    {
+        "session_id": "6e73c25e-c8e9-4a7f-b8f0-904f05efa514",
+        "plate": "ABC-123",
+        "spot_id": "S02",
+        "lot_id": "L01",
+        "check_in_time": "2026-08-27T02:35:00.228455",
+        "check_out_time": "2026-08-27T02:35:59.996741",
+        "parking_fee": 0,
+        "status": "COMPLETED"
+    }
+]

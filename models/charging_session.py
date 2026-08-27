@@ -3,56 +3,59 @@ from datetime import datetime
 
 
 class ChargingSession:
+
     def __init__(
         self,
-        parking_session_id,
-        start_meter,
-        charging_session_id=None,
+        plate,
+        spot_id,
+        session_id=None,
         start_time=None,
         end_time=None,
-        end_meter=None,
-        energy_cost=0,
+        energy_used=0,
+        charging_fee=0,
         status="ACTIVE"
     ):
-        self.charging_session_id = (
-            charging_session_id or str(uuid.uuid4())
+        self.session_id = session_id or str(uuid.uuid4())
+        self.plate = plate
+        self.spot_id = spot_id
+
+        self.start_time = (
+            start_time or datetime.now().isoformat()
         )
-        self.parking_session_id = parking_session_id
-        self.start_time = start_time or datetime.now().isoformat()
+
         self.end_time = end_time
-        self.start_meter = start_meter
-        self.end_meter = end_meter
-        self.energy_cost = energy_cost
+        self.energy_used = energy_used
+        self.charging_fee = charging_fee
         self.status = status
 
-    def calculate_cost(self, kwh_rate):
-        """
-        Charging cost calculation will be implemented
-        when we build the charging logic.
-        """
-        return 0
+    def calculate_fee(self, kwh_rate):
+        self.charging_fee = (
+            self.energy_used * kwh_rate
+        )
+
+        return self.charging_fee
 
     def to_dict(self):
         return {
-            "charging_session_id": self.charging_session_id,
-            "parking_session_id": self.parking_session_id,
+            "session_id": self.session_id,
+            "plate": self.plate,
+            "spot_id": self.spot_id,
             "start_time": self.start_time,
             "end_time": self.end_time,
-            "start_meter": self.start_meter,
-            "end_meter": self.end_meter,
-            "energy_cost": self.energy_cost,
+            "energy_used": self.energy_used,
+            "charging_fee": self.charging_fee,
             "status": self.status
         }
 
     @classmethod
     def from_dict(cls, data):
         return cls(
-            parking_session_id=data["parking_session_id"],
-            start_meter=data["start_meter"],
-            charging_session_id=data["charging_session_id"],
+            plate=data["plate"],
+            spot_id=data["spot_id"],
+            session_id=data["session_id"],
             start_time=data["start_time"],
             end_time=data.get("end_time"),
-            end_meter=data.get("end_meter"),
-            energy_cost=data.get("energy_cost", 0),
+            energy_used=data.get("energy_used", 0),
+            charging_fee=data.get("charging_fee", 0),
             status=data.get("status", "ACTIVE")
         )

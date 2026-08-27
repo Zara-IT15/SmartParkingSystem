@@ -1,1 +1,12 @@
-[]
+[
+    {
+        "session_id": "c3602ee9-aaea-4896-9e74-aa4eaf2a04a5",
+        "plate": "EV-001",
+        "spot_id": "EV01",
+        "start_time": "2026-08-27T03:02:03.460388",
+        "end_time": "2026-08-27T03:04:11.307693",
+        "energy_used": 20,
+        "charging_fee": 1000,
+        "status": "COMPLETED"
+    }
+]

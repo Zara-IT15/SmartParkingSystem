@@ -1,1 +1,14 @@
-[]
+[
+    {
+        "lot_id": "L01",
+        "name": "Main Parking",
+        "location": "Multan",
+        "spot_ids": [
+            "S01",
+            "S02",
+            "S03",
+            "S04",
+            "EV01"
+        ]
+    }
+]

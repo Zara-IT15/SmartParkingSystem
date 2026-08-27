@@ -1,4 +1,4 @@
-lass ParkingLot:
+class ParkingLot:
     def __init__(self, lot_id, name, location, spot_ids=None):
         self.lot_id = lot_id
         self.name = name
@@ -20,3 +20,4 @@ lass ParkingLot:
             name=data["name"],
             location=data["location"],
             spot_ids=data.get("spot_ids", [])
+        )
