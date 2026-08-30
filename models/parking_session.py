@@ -3,6 +3,7 @@ from datetime import datetime
 
 
 class ParkingSession:
+
     def __init__(
         self,
         plate,
@@ -25,10 +26,31 @@ class ParkingSession:
 
     def calculate_fee(self, hourly_rate):
         """
-        Parking fee calculation will be implemented
-        when we build the billing logic.
+        Calculate parking fee based on parking duration.
+        Minimum charge is for 1 hour.
         """
-        return 0
+
+        if not self.check_out_time:
+            self.check_out_time = datetime.now().isoformat()
+
+        check_in = datetime.fromisoformat(self.check_in_time)
+        check_out = datetime.fromisoformat(self.check_out_time)
+
+        duration_seconds = (
+            check_out - check_in
+        ).total_seconds()
+
+        duration_hours = duration_seconds / 3600
+
+        # Minimum charge: 1 hour
+        charged_hours = max(1, duration_hours)
+
+        self.parking_fee = round(
+            charged_hours * hourly_rate,
+            2
+        )
+
+        return self.parking_fee
 
     def to_dict(self):
         return {

@@ -18,5 +18,35 @@
         "energy_used": 20,
         "charging_fee": 1000,
         "status": "COMPLETED"
+    },
+    {
+        "session_id": "687d276b-a05c-461a-9493-03566368dbd4",
+        "plate": "EV-001",
+        "spot_id": "EV01",
+        "start_time": "2026-08-28T04:53:16.737200",
+        "end_time": "2026-08-28T04:55:16.864083",
+        "energy_used": 20.0,
+        "charging_fee": 1000.0,
+        "status": "COMPLETED"
+    },
+    {
+        "session_id": "57fbf451-833b-4f1e-b228-b196786298ac",
+        "plate": "EV-001",
+        "spot_id": "EV01",
+        "start_time": "2026-08-28T21:02:23.119133",
+        "end_time": "2026-08-28T21:02:59.172076",
+        "energy_used": 20.0,
+        "charging_fee": 1000.0,
+        "status": "COMPLETED"
+    },
+    {
+        "session_id": "1dcc095d-e15e-42d9-88d9-258ccf4d0647",
+        "plate": "EV-001",
+        "spot_id": "EV01",
+        "start_time": "2026-08-29T03:20:09.907144",
+        "end_time": "2026-08-29T03:20:44.194256",
+        "energy_used": 20,
+        "charging_fee": 1000,
+        "status": "COMPLETED"
     }
 ]

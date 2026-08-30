@@ -29,8 +29,14 @@ class ChargingSession:
         self.status = status
 
     def calculate_fee(self, kwh_rate):
-        self.charging_fee = (
-            self.energy_used * kwh_rate
+        """
+        Calculate EV charging fee
+        based on energy used in kWh.
+        """
+
+        self.charging_fee = round(
+            self.energy_used * kwh_rate,
+            2
         )
 
         return self.charging_fee
