@@ -38,5 +38,13 @@
         "status": "AVAILABLE",
         "hourly_rate": 100,
         "kwh_rate": 50
+    },
+    {
+        "spot_id": "S05",
+        "lot_id": "L02",
+        "spot_type": "REGULAR",
+        "status": "AVAILABLE",
+        "hourly_rate": 150.0,
+        "kwh_rate": 0
     }
 ]

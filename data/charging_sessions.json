@@ -48,5 +48,15 @@
         "energy_used": 20,
         "charging_fee": 1000,
         "status": "COMPLETED"
+    },
+    {
+        "session_id": "80692369-3abd-4894-8714-6573fcc86a51",
+        "plate": "EV-001",
+        "spot_id": "EV01",
+        "start_time": "2026-08-30T03:35:40.553921",
+        "end_time": "2026-08-30T03:36:00.511138",
+        "energy_used": 20,
+        "charging_fee": 1000,
+        "status": "COMPLETED"
     }
 ]

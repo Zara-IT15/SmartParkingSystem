@@ -48,5 +48,35 @@
         "check_out_time": "2026-08-29T03:18:20.176719",
         "parking_fee": 100,
         "status": "COMPLETED"
+    },
+    {
+        "session_id": "588cdce9-20fc-42e8-8ab9-d9722ad75210",
+        "plate": "ABC-123",
+        "spot_id": "S01",
+        "lot_id": "L01",
+        "check_in_time": "2026-08-30T03:34:45.828138",
+        "check_out_time": "2026-08-30T03:35:11.570418",
+        "parking_fee": 100,
+        "status": "COMPLETED"
+    },
+    {
+        "session_id": "d80a2ac7-6145-432b-9daf-559647d489c3",
+        "plate": "ABC-123",
+        "spot_id": "S02",
+        "lot_id": "L01",
+        "check_in_time": "2026-08-30T03:37:58.149230",
+        "check_out_time": "2026-08-30T03:49:38.407236",
+        "parking_fee": 100,
+        "status": "COMPLETED"
+    },
+    {
+        "session_id": "7f98a6b5-a2b5-45c8-a87d-c4a9bda54d53",
+        "plate": "ABC-123",
+        "spot_id": "S01",
+        "lot_id": "L01",
+        "check_in_time": "2026-08-30T04:04:06.094499",
+        "check_out_time": "2026-08-30T04:05:29.153503",
+        "parking_fee": 100,
+        "status": "COMPLETED"
     }
 ]

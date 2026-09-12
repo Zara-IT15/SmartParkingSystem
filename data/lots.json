@@ -10,5 +10,13 @@
             "S04",
             "EV01"
         ]
+    },
+    {
+        "lot_id": "L02",
+        "name": "Mall Parking",
+        "location": "Multan",
+        "spot_ids": [
+            "S05"
+        ]
     }
 ]
